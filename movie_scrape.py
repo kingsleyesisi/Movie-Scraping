@@ -2,12 +2,12 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 
-latest_movies = []
 print("Your Movie list is on it's way")
 print('What Would you like to save it with?')
 file_name = input('>')
 
-for no in range(1,2):
+latest_movies = []
+for no in range(1,6):
     url = f"https://www.rottentomatoes.com/browse/movies_in_theaters/sort:newest?page={no}"
     response = requests.get(url)
     response = response.content
