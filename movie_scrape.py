@@ -7,7 +7,7 @@ print('What Would you like to save it with?')
 file_name = input('>')
 
 latest_movies = []
-for no in range(1,6):
+for no in range(1,4):
     url = f"https://www.rottentomatoes.com/browse/movies_in_theaters/sort:newest?page={no}"
     response = requests.get(url)
     response = response.content
